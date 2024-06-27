@@ -19,5 +19,13 @@ After this, we do matrix multiplication between the input layer values and the h
 This is still the pre-activated values for the hidden layer, as we then need to apply an activation function, which in this case, is sigmoid.
 We do the same thing with the hidden and output layer values.
 
+## Step 3: Backward Propogation
+
+Now, we have gotten our output, but we have to analyze the output and see how much error there is and how each neuron contributed to the error. Here, we use the derivative of the activation function and multiply it by the error of the previous layer.
+
+## Step 4: Predict
+
+We train our model 50 times for all 55000 training images, and once we are done with training, we can then proceed directly yo predicting test images, of which there are 5000.
+
 
 
